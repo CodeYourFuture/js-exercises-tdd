@@ -27,6 +27,12 @@ Here are the requirements:
 - There should be a commit corresponding to each of the 6 photos above. Each commit message should describe what changed in the photo.
 - Use git commands to make sure Photo 3 **branches** out to Photo 4 and Photo 5. Photo 6 should then be a **merge** of Photo 4 and Photo 5. 
 
+
+
+**You will have to use a variety of basic git commands to achieve this.
+If you are unsure, make sure you refer to the resources at https://codeyourfuture.github.io/syllabus-master/others/lesson0.html#git**
+
+
 Example is given in this repo.
 
 See commit history: https://github.com/dubchoi/cyf-git-exercise/commits/master
