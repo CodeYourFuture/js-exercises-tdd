@@ -29,3 +29,7 @@ Here are the requirements:
 
 Example is given in this repo.
 
+See commit history: https://github.com/dubchoi/cyf-git-exercise/commits/master
+
+Your git graph should look similar to: https://github.com/dubchoi/cyf-git-exercise/network
+
