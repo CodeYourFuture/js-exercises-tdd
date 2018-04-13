@@ -11,6 +11,6 @@ function removeVowelsForWords(words) {
 module.exports = removeVowelsForWords;
 
 /*
-    sample input: ["Irina", "Etza", "Daniel"]
-    sample output: ["rn", "tz", "dnl"]
+    input: ["Irina", "Etza", "Daniel"]
+    expected output: ["rn", "tz", "dnl"]
 */

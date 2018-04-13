@@ -3,7 +3,7 @@ var secondLargest = require('./second-largest');
 test('Second largest', function () {
     var numbers = [2, 0, 23, 0, 57, 1];
 
-    var output = functions.secondLargest(numbers);
+    var output = secondLargest(numbers);
 
     expect(output).toEqual(2);
 });
