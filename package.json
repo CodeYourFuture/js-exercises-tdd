@@ -10,5 +10,13 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^22.4.3"
+  },
+  "coverageThreshold": {
+    "global": {
+      "branches": 80,
+      "functions": 80,
+      "lines": 80,
+      "statements": -10
+    }
   }
 }

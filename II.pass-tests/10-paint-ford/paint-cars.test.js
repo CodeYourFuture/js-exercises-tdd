@@ -1,3 +1,5 @@
+var paintShop = require('./paint-cars');
+
 test('Paint shop', function () {
     var cars = [
         { make: 'Ford', model: 'Fiesta', colour: 'Red' },
