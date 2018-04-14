@@ -1,11 +1,11 @@
-var greetPeople = require("./remove-vowels");
+var removeVowels = require("./remove-vowels");
 
 test('remove vowels from word', function () {
 
     // Arrange
-    var samuel = "samuel";
+    
     // Act
-    var result = removeVowels(samuel);
+    var result = removeVowels("samuel");
     // Assert
     expect(result).toEqual("_a_ue_");
 })
