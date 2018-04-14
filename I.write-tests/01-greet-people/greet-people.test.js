@@ -5,6 +5,6 @@ test("print list of names prefixed with Hello", function() {
     var mentors = ['irina', 'ashleigh', 'etza'];
     // Act
     var result = greetPeople(mentors);
-    // Assert
+    // Assertdf
     expect(result).toEqual('Hello irinaashleighetza');
 });
