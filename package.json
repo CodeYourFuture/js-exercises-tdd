@@ -18,5 +18,8 @@
       "lines": 80,
       "statements": -10
     }
+  },
+  "dependencies": {
+    "node-fetch": "^2.1.2"
   }
 }
