@@ -16,3 +16,13 @@ test("has two numbers", function() {
 	var result = add("2,4");
     expect(result).toEqual(6);
 });
+
+test("handle an unknown amount of numbers", function() {
+	var result = add("2,4,5,6,7");
+    expect(result).toEqual(24);
+});
+
+test("handle new lines between numbers", function() {
+	var result = add("1\n2,3");
+    expect(result).toEqual(6);
+});
