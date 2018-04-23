@@ -1,8 +1,12 @@
 function add(strNumbers){
     if (strNumbers === "") return 0;
     if (strNumbers.length === 1) return Number(strNumbers);
+    //return strNumbers.match('[0-9]+$');
     return strNumbers
+        .replace(/\/+/, '')
         .split("\n")
+        .join()
+        .split(";")
         .join()
         .split(",")
         .map(Number)
@@ -13,4 +17,4 @@ module.exports = {
     add
 };
 
-console.log(add("1\n2,3"));
+console.log(add("//\n1;2,3"));

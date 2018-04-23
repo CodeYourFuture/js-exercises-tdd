@@ -26,3 +26,8 @@ test("handle new lines between numbers", function() {
 	var result = add("1\n2,3");
     expect(result).toEqual(6);
 });
+
+test("support different delimiters", function() {
+	var result = add("//;\n1;2");
+    expect(result).toEqual(3);
+});
