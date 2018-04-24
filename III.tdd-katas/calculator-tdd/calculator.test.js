@@ -31,3 +31,8 @@ test("support different delimiters", function() {
 	var result = add("//;\n1;2");
     expect(result).toEqual(3);
 });
+
+test("negatives not allowed", function() {
+	var result = add("1,4,-1");
+    expect(result).toEqual("negatives not allowed: -1");
+});
