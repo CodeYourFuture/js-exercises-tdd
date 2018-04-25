@@ -2,7 +2,7 @@ function add(strNumbers){
     if (strNumbers === "") return 0;
     if (strNumbers.length === 1) return Number(strNumbers);
     
-    var arr = strNumbers
+    let arr = strNumbers
         .replace(/\/+/, '')
         .split("\n")
         .join()
@@ -10,16 +10,24 @@ function add(strNumbers){
         .join()
         .split(",")
         .map(Number);
-       
-    for (var i = 0; i <= arr.length; i++){
+    
+    const negatives = [];
+    for (let i = 0; i <= arr.length; i++){
         if(arr[i] < 0){
-            return "negatives not allowed: " + arr[i];
+            negatives.push(arr[i]);
         }
     }
+    
+    if(negatives.length > 0){
+        return "negatives not allowed: " + negatives;
+    }
 
-    return arr.reduce((total, value) => total + value);
+    return arr.reduce((total, value) => {
+        if(value < 1000){
+           return total + value;
+        }
+        return total;
+    });
 }
 
-module.exports = { add };
-
-console.log(add("1,4,-1"));
+module.exports = add;
