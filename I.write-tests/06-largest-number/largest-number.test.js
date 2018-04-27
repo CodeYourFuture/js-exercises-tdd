@@ -4,9 +4,10 @@
 
 // also test that the original array hasn't changed
 var getLargestNumber = require("./largest-number");
-test("get the largest number", function() {
+test("get the largest number from an arraylist", function() {
   //arrange
   var input = [3, 21, 88, 4, 36];
+
   //act
   var result = getLargestNumber(input);
   //assert
@@ -18,5 +19,5 @@ test("orginal array hasn't changed", function() {
   //act
   var result = getLargestNumber(input);
   //assert
-  expect(result).toEqual(orginalInput);
+  expect(input).toEqual([3, 21, 88, 4, 36]);
 });

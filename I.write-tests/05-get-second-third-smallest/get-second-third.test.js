@@ -14,5 +14,5 @@ test("return second and third largest", function() {
 test("do not change the orginal array", function() {
   var input = [90, 5, 11, 8, 6];
   var result = sut(input);
-  expect(result).toEqual(orginalInput);
+  expect(input).toEqual([90, 5, 11, 8, 6]);
 });

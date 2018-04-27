@@ -1,9 +1,10 @@
-var getWordLengths = function(someWords) {
+function getWordLengths(someWords) {
   var result = [];
-  someWords.ForEach(function(word) {
-    result.push(word.length);
-  });
+  for (i = 0; i < someWords.length; i++) {
+    result.push(someWords[i].length);
+  }
+
   return result;
-};
+}
 
 module.exports = getWordLengths;

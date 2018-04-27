@@ -1,9 +1,9 @@
 function findNeedle(words) {
-  words.forEach(function(word) {
-    if (word === "needle") {
-      return words.indexOf("needle");
+  for (i = 0; i < words.length; i++) {
+    if (words[i] === "needle") {
+      return i;
     }
-  });
+  }
 }
 
 module.exports = findNeedle;

@@ -1,8 +1,7 @@
 function addNumbers(numbers) {
-  var result = [];
-  function add(a, b) {
-    return a + b;
-  }
-  return result.push(numbers.reduce(add, 0));
+  return numbers.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0
+  );
 }
 module.exports = addNumbers;
