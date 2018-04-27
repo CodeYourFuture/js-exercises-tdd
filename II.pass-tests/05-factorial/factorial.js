@@ -9,7 +9,13 @@
 // note: factorial of 0 is 1
 
 function factorial(int) {
-
+  if (int < 0) {
+    return 0;
+  } else if (int === 0) {
+    return 1;
+  } else if (int > 0) {
+    return int * factorial(int - 1);
+  }
 }
 
 module.exports = factorial;
