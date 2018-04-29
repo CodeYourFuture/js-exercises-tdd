@@ -1,3 +1,15 @@
+var getSecondThird = require('./get-second-third');
+test('get second third', function() {
+
+    var array = [90, 5, 11, 8, 6];
+    var result = getSecondThird(array);
+    expect(result).toEqual([6, 8]);
+})
+
+
+
+
+
 // example
 // input = [90, 5, 11, 8, 6];
 // expected output = [6, 8];

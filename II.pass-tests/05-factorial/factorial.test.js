@@ -5,7 +5,7 @@ describe('Factorial', function () {
         var in1 = 5;
         var exp1 = 120;
 
-        var in2 = 9;
+        var in2 = 9;     
         var exp2 = 362880;
 
         var in3 = 1;
