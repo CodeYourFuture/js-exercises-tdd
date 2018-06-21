@@ -1,5 +1,4 @@
 const fetch = require("node-fetch");
-
 const getRepos = function(repoName) {
   return fetch(repoName)
     .then(data => data.json())

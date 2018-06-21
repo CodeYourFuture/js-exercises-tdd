@@ -7,9 +7,6 @@
 
 // calculate and return the factorial of int
 // note: factorial of 0 is 1
-
-function factorial(int) {
-
-}
-
+const factorial = int => int < 0 ? 'please provide a positive number'
+    : (int > 0 && int * factorial(int - 1)) || int == 0 && 1;
 module.exports = factorial;

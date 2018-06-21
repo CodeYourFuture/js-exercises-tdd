@@ -1,4 +1,1 @@
-function addNumbers(numbers) {
-
-}
-module.exports = addNumbers;
+module.exports = numbers => numbers.reduce((a, b) => a + b);

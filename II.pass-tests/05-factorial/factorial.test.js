@@ -22,11 +22,12 @@ describe('Factorial', function () {
         var out3 = factorial(in3);
         var out4 = factorial(in4);
         var out5 = factorial(in5);
-
+        expect.assertions(6);
         expect(out1).toEqual(exp1);
         expect(out2).toEqual(exp2);
         expect(out3).toEqual(exp3);
         expect(out4).toEqual(exp4);
         expect(out5).toEqual(exp5);
+        expect(factorial(-10)).toBe("please provide a positive number");
     });
 })

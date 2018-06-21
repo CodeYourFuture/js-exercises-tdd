@@ -18,8 +18,7 @@ test('Car sales', function () {
         'Toyota': 6500
     };
 
-    var output = sales(carsSold);
-
+    var output = sales(carsSold);    
     expect(output).toEqual(totals);
 });
 

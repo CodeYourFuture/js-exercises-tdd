@@ -1,4 +1,4 @@
-var average = require('./get-average');
+var {average} = require('./get-average');
 
 test('Average', function () {
     var numbers = [4, '-', 8, 11, 'hello', '57', 0, 2];

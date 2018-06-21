@@ -16,3 +16,5 @@ module.exports = greetPeople;
   var mentors = ['Irina', 'Ashleigh', 'Etza'];
   var result = greetPeople(mentors)
 */
+var mentors = ['Irina', 'Ashleigh', 'Etza'];
+ 
