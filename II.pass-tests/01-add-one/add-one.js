@@ -1,6 +1,6 @@
 module.exports = function (numbers) {
 
-    returnnumbers.map(element => element + 1);
+    return numbers.map(element => element + 1);
 
 };
 
