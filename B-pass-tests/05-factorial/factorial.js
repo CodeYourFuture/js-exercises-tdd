@@ -1,6 +1,6 @@
 // int is an integer
 // a factorial is the product of all non-negative integers
-// less than or equal to the iniital number.
+// less than or equal to the inital number.
 
 // for example the factorial of 5 is 120
 // 120 = 1 * 2 * 3 * 4 * 5
