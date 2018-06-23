@@ -5,5 +5,5 @@ test('Second largest', function () {
 
     var output = secondLargest(numbers);
 
-    expect(output).toEqual(2);
+    expect(output).toEqual(23);
 });
