@@ -17,14 +17,17 @@ Once you cloned the repo, first, run `npm install`.
 To run the tests from the console, run the command: `npm test` 
 To keep the tests running (auto updating when you save files), run the command: `npm test -- --watch` then press `a` to run all the tests and keep watching the files for changes. To quit the tests, type `q`.
 
-To run a specifc test, do: `npm test -- filname` for example `npm test -- remove-vowels` (that will run only the files that matches remove-vowels, i.e. remove-vowels.test.js)
+To run a specific test, do: `npm test -- YOUR_TEST_FILENAME` for example `npm test -- remove-vowels` (that will run only the files that matches remove-vowels, i.e. `remove-vowels.test.js`)
 
-### Write Tests
-The first set of exercises involve implemented code that we will add tests for. You can run only the tests in the *I.write-tests* folder by running `npm test -- write-tests` or you can run them with a watch with `npm test -- write-tests --watch`
+### A - Write Tests
+The first set of exercises involve implemented code that we will add tests for. You can run only the tests in the `A-write-tests` folder by running `npm test -- write-tests` or you can run them with a watch with `npm test -- write-tests --watch`
 
 Think about **edge cases** while writing tests.
 
-### Pass Tests
-The second set of exercises involve a set of tests that we will write code to make it pass. You can run only the tests in the *I.pass-tests* folder by running `npm test -- pass-tests` or you can run them with a watch with `npm test -- pass-tests --watch`.
+### B - Pass Tests
+The second set of exercises involve a set of tests that we will write code to make it pass. You can run only the tests in the `B-pass-tests` folder by running `npm test -- pass-tests` or you can run them with a watch with `npm test -- pass-tests --watch`.
 
 Once a test passes. Add another test for another test case, preferably another **edge case** to make sure your code is not *buggy*. 
+
+### C - TDD Katas
+The third set of exercises are *katas* (short practice exercises, see [here for more](https://en.wikipedia.org/wiki/Kata_(programming))). You can run only the tests in the `C-tdd-katas` folder by running `npm test -- tdd-katas` or you can run them with a watch with `npm test -- tdd-katas --watch`.
