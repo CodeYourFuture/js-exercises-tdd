@@ -4,7 +4,8 @@ const {
   combineArrays,
   destructuring,
   templateString
-} = require("./index");
+} = require("./es6");
+console.log('testing',arrow);
 
 test("function arrow is instance of a function", () => {
   expect(arrow).toBeInstanceOf(Function);

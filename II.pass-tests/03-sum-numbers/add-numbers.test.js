@@ -5,6 +5,8 @@ test('Add all numbers', function () {
     var expected = 53;
 
     var output = addAllnumbers(numbers);
-
+    expect.assertions(3);
     expect(output).toEqual(expected);
+    expect(addAllnumbers()).toBe(0);
+    expect(addAllnumbers([])).toBe(0);
 });

@@ -1,6 +1,8 @@
 module.exports = function (array) {
-    const newArray = array.sort(function (x, y) {
+    const [, secondHighest, thirdHighest] = array
+      .concat()
+      .sort(function(x, y) {
         return x > y;
-    });
-    return [newArray[1], newArray[2]];
+      });
+    return [secondHighest, thirdHighest];
 };

@@ -5,6 +5,7 @@ test('Average', function () {
     var expected = 5;
 
     var output = average(numbers);
-
+    expect(average()).toEqual(0);//default
+    expect(average([])).toEqual(0);//empty
     expect(output).toEqual(expected);
 });
