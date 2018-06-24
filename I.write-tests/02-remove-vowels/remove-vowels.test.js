@@ -1,8 +1,9 @@
-test('remove vowels from word', function () {
+test("remove vowels from word", function() {
+  // Arrange
+  var removeVowels = require("./remove-vowels");
 
-    // Arrange
-
-    // Act
-
-    // Assert
-})
+  // Act
+  var result = removeVowels("samuel");
+  // Assert
+  expect(result).toEqual("s_m__l");
+});
