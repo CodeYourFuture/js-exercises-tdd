@@ -1,3 +1,5 @@
+//A bit confused as to what this code is doing. It all passed the test without any change from me.
+
 const getRepos = require("./async-2");
 const fetcher = require("./fetcher");
 jest.mock("./fetcher");
