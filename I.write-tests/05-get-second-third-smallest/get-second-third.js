@@ -1,4 +1,5 @@
 
+
 module.exports = function (array) {
     
     array.sort(function (x, y) {
@@ -6,3 +7,4 @@ module.exports = function (array) {
     });
     return array[1], array[2];
 };
+
