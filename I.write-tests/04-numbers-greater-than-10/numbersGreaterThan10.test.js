@@ -1,7 +1,8 @@
 var largerThanTen = require('./numbersGreaterThan10');
 
 test('Get numbers greater than 10', function () {
-
+var array = [4, 10, 32, 9, 21];
+expect(largerThanTen(array)).toEqual([32,21]);
 });
 
 
