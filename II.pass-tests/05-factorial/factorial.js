@@ -7,9 +7,11 @@
 
 // calculate and return the factorial of int
 // note: factorial of 0 is 1
-
+var f = [];
 function factorial(int) {
-
+    if (int == 0 || int == 1) return 1;
+    if (f[int] > 0) return f[int];
+    return (f[int] = factorial(int - 1) * int);
 }
 
 module.exports = factorial;

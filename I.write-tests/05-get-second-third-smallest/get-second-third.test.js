@@ -6,7 +6,7 @@ test("get second third", function () {
     // Act
     var res = getSecondThird([90, 5, 11, 8, 6]);
     // Assert
-    expect(res).toEqual([6, 8]);
+    expect(res).toEqual(6, 8);
 });
 
 

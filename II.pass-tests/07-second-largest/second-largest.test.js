@@ -1,9 +1,9 @@
-var secondLargest = require('./second-largest');
+var secondSmallest = require("./second-largest");
 
 test('Second largest', function () {
     var numbers = [2, 0, 23, 0, 57, 1];
 
-    var output = secondLargest(numbers);
+    var output = secondSmallest(numbers);
 
-    expect(output).toEqual(2);
+    expect(output).toEqual(23);
 });
