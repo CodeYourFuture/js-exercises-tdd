@@ -9,7 +9,7 @@ return capitals.map(capital=>{
    const city = capital.city;
    const country = capital.country;
     var result = func({city, country});
-    result = result + '!';
+    
     return result;
 })
 }
