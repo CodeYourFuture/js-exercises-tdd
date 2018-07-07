@@ -10,6 +10,21 @@
 
 function factorial(int) {
 
-}
+    if (int === 0||int === 1) {
+
+        return 1;
+    
+      } else {
+    
+        for(var i = int-1; i > 0; --i) { //always make sure to decrement the value BEFORE it's tacked onto the original as a product
+          int *= i;
+        }
+    
+        return int;
+    
+      }
+    
+    }
+
 
 module.exports = factorial;

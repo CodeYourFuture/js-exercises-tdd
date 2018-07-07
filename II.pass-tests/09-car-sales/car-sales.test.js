@@ -1,4 +1,4 @@
-var sales = require('./car-sales');
+                            var sales = require('./car-sales');
 
 test('Car sales', function () {
     var carsSold = [

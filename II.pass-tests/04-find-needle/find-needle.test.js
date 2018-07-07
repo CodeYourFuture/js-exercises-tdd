@@ -5,5 +5,6 @@ test('Find the needle', function () {
     var expected = 3;
 
     var output = findTheNeedle(words);
+    
     expect(output).toEqual(expected);
 });
