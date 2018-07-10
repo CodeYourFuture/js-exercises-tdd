@@ -6,13 +6,13 @@ function removeVowels(word) {
     characters.forEach(function (character) {
         if (character === 'a' || character === 'o' || character === 'i' || character === 'e'
             || character === 'u' || character === 'y') {
-            result.push(character)
+            result.push("");
         } else {
-            result.push('_')
+            result.push(character);
         }
     })
 
-    return result.join('');
+    return result.join("").toLowerCase();
 }
 
 module.exports = removeVowels;
