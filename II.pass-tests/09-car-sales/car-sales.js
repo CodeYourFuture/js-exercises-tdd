@@ -1,9 +1,11 @@
-function average(element) {
-    
-    element = element.filter(e => typeof e !== 'string');
-    console.log(element);
-    console.log(element.length);
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
-    return element.reduce(reducer)element.length;
+function sales(carsSold) {
+  const result = {};
+    carsSold.forEach(function(element) {
+        if (result[element.make] == undefined) result[element.make] = 0;
+        result[element.make] += element.price;
+    });
+  return result;
 
 }
+
+module.exports = sales;

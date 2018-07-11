@@ -1,11 +1,18 @@
 // Turn this function into an arrow function
-function arrow() {
+// function arrow() {
+//   return "es6 is awesome!";
+// }
+
+// };
+const arrow = () => {
   return "es6 is awesome!";
 }
 
+
 //Use the es6 syntax for default parameter
-function defaultParameter(name) {
-  var name = name || "sam";
+function defaultParameter(name ) {
+  var name = typeof name !== "undefined" ? name : "sam";
+  // var name = name || "sam";
   return name;
 }
 
