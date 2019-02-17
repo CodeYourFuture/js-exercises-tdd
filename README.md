@@ -6,8 +6,11 @@ First step is to `fork` this repo to your account, then `clone` it locally.
 
 After you do that, `add a remote` to point to CodeYourFuture repo, that will allow you to update you forked copy when we update the repo with more exercises.
 
-This is the command to run
-`git@github.com:CodeYourFuture/js-exercises-tdd.git`
+This is the command to run (see https://help.github.com/articles/working-with-forks/):
+
+```
+git remote add upstream git@github.com:CodeYourFuture/js-exercises-tdd.git
+```
 
 **Always work on a branch not on master!**
 
