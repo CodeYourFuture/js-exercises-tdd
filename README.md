@@ -9,7 +9,7 @@ After you do that, `add a remote` to point to CodeYourFuture repo, that will all
 This is the command to run (see https://help.github.com/articles/working-with-forks/):
 
 ```
-git remote add upstream git@github.com:CodeYourFuture/js-exercises-tdd.git
+git remote add upstream https://github.com/CodeYourFuture/js-exercises-tdd.git
 ```
 
 **Always work on a branch not on master!**
