@@ -12,7 +12,7 @@ describe('Factorial', function () {
         var exp3 = 1;
 
         var in4 = 0;
-        var exp4 = 1;
+        var exp4 = 1 ;
 
         var in5 = 3;
         var exp5 = 6;
