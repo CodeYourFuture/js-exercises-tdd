@@ -8,7 +8,7 @@ function removeVowelsForWords(words) {
     return result;
 }
 
-module.exports = removeVowelsForWords;
+module.exports = removeVowelsForWords ;
 
 /*
     input: ["Irina", "Etza", "Daniel"]
