@@ -5,7 +5,7 @@ function getLargestNumber(array) {
             largestNumber = array[i]
         }
     }
-    return largestNumber;
+    return largestNumber ;
 }
 
 module.exports = getLargestNumber;
