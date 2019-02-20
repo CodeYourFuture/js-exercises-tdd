@@ -8,4 +8,4 @@ const getRepos = function(repoName) {
   });
 };
 
-module.exports = getRepos;
+module.exports = getRepos ;

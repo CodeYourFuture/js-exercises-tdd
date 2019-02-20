@@ -14,4 +14,4 @@ test("gets a list of repositories names (with mock)", function() {
   });
 });
 
-test("a more deterministic test", function() {});
+test("a more deterministic test", function() {}) ;

@@ -9,4 +9,4 @@ test("gets a list of repositories names", function() {
     expect(result).toContain("js-exercises");
     expect(result).toContain("dom-ajax-repo");
   });
-});
+}) ;
