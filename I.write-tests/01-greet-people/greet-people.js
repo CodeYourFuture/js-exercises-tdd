@@ -2,10 +2,10 @@ function greetPeople(people) {
     var greeting = 'Hello ';
 
     people.forEach(function (person) {
-        greeting = greeting + person;
+        greeting = greeting + person + ", ";
     });
 
-    return greeting;
+    return greeting.slice(0, -2) ;
 }
 
 module.exports = greetPeople;
@@ -16,3 +16,17 @@ module.exports = greetPeople;
   var mentors = ['Irina', 'Ashleigh', 'Etza'];
   var result = greetPeople(mentors)
 */
+
+
+// function greetPeople(people) {
+//     var greeting = "Hello ";
+//     people.forEach(function(person,index){
+//         if(index !== people.length -1){
+// greeting =greeting + person + ", "
+//         }else{
+//             greeting = greeting + person;
+//         }
+//     })
+//     return greeting;
+// }
+// module.exports = greetPeople;
