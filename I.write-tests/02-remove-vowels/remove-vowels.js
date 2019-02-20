@@ -1,20 +1,23 @@
 function removeVowels(word) {
-    var characters = word.split('');
+  var characters = word.split("");
 
-    var result = [];
+  var result = [];
+  const myVowels = ["a", "A", "o", "O", "i", "I", "e", "E", "u", "U", "y", "Y"];
+  characters.forEach(function(character) {
+    if (myVowels.includes(character)) {
+      result.push("");
+    } else {
+        result.push(character.toLowerCase());
+    }
+  });
 
-    characters.forEach(function (character) {
-        if (character === 'a' || character === 'o' || character === 'i' || character === 'e'
-            || character === 'u' || character === 'y') {
-            result.push(character)
-        } else {
-            result.push('_')
-        }
-    })
-
-    return result.join('');
+  return result.join("");
 }
-
+// const names = ["Irina", "Etza", "Daniel"];
+// var x = names.map(function(name) {
+//   return removeVowels(name);
+// });
+// console.log(x);
 module.exports = removeVowels;
 
 /*
@@ -23,4 +26,5 @@ module.exports = removeVowels;
   var result = removeVowels('samuel');
 
   what is the value of result?
+  the expected value of ("samuel") result will be sml because aue are vowel
 */
