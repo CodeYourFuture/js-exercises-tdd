@@ -5,5 +5,5 @@ test('Get word lengths', function () {
     var expected = [3, 6, 10, 5];
 
     var output = wordLengths(words);
-    expect(output).toEqual(expected);
+    expect(output).toEqual(expected) ;
 });
