@@ -6,5 +6,5 @@ test('Add all numbers', function () {
 
     var output = addAllnumbers(numbers);
 
-    expect(output).toEqual(expected);
+    expect(output).toEqual(expected) ;
 });
