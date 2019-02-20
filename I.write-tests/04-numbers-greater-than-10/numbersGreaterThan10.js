@@ -8,5 +8,5 @@ module.exports = function (array) {
         }
     }
 
-    return result;
+    return result ;
 }
