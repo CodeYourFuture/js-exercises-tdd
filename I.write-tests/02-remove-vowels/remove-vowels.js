@@ -1,14 +1,12 @@
 function removeVowels(word) {
     var characters = word.split('');
-
     var result = [];
-
     characters.forEach(function (character) {
         if (character === 'a' || character === 'o' || character === 'i' || character === 'e'
-            || character === 'u' || character === 'y') {
-            result.push(character)
-        } else {
+            || character === 'u') {
             result.push('_')
+        } else {
+            result.push(character)
         }
     })
 
