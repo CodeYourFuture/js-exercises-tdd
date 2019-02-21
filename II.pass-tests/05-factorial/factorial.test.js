@@ -1,21 +1,9 @@
-var factorial = require('./factorial');
+const factorial = require('./factorial');
 
 describe('Factorial', function () {
     test('Factorial', function () {
-        var in1 = 5;
-        var exp1 = 120;
-
-        var in2 = 9;
-        var exp2 = 362880;
-
-        var in3 = 1;
-        var exp3 = 1;
-
-        var in4 = 0;
-        var exp4 = 1;
-
-        var in5 = 3;
-        var exp5 = 6;
+        var in1 = 5, in2 = 9, in3 = 1, in4 = 0, in5 = 3;
+        var exp1 = 120, exp2 = 362880, exp3 = 1, exp4 = 1, exp5 = 6;
 
         var out1 = factorial(in1);
         var out2 = factorial(in2);
