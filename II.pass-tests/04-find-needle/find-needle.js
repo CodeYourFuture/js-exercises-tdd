@@ -1,7 +1,5 @@
-function findNeedle(words) {
-  return words.indexOf("needle");
+module.exports = function (words, wordToFindIndex) {
+  return words.indexOf(wordToFindIndex);
 }
 
-module.exports = findNeedle;
 
-//console.log(findNeedle(["house", "train", "slide", "needle", "book"]));
