@@ -1,4 +1,6 @@
-module.exports = function (array) {
+module.exports = getSecondThirdSmallest;
+
+function getSecondThirdSmallest(array) {
     const newArray = array.slice()
     newArray.sort(function (x, y) {
         return x > y;
