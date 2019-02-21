@@ -1,10 +1,14 @@
-test('remove vowels from all words in array', function () {
-    // Arrange
+const removeVowelsForWords = require("./remove-vowels-in-array");
 
-    // Act
-
-    // Assert
-})
+test("remove vowels from all words in array", function() {
+  // Arrange
+  const people = ["Irina", "Etza", "Daniel"];
+  const expectation = ["rn", "tz", "dnl"];
+  // Act
+  const result = removeVowelsForWords(people);
+  // Assert
+  expect(result).toEqual(expectation);
+});
 
 // example
 // input: ["Irina", "Etza", "Daniel"]

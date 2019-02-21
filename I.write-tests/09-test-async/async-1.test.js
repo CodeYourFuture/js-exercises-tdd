@@ -1,11 +1,11 @@
 const getRepos = require("./async-1");
 
 test("gets a list of repositories names", function() {
-  // arrange
+  //arrange
   var url = "https://api.github.com/users/kabaros/repos";
-  // act
+  //act
   return getRepos(url).then(function(result) {
-    // assert
+    //assert
     expect(result).toContain("js-exercises");
     expect(result).toContain("dom-ajax-repo");
   });
