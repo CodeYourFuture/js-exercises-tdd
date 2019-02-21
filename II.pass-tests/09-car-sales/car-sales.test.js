@@ -11,7 +11,7 @@ test('Car sales', function () {
         { make: 'Ford', model: 'Fiesta', colour: 'Green', price: 2000 }
     ];
 
-    var totals = {
+    var totals =  {
         'Ford': 22999,
         'Honda': 8000,
         'Land Rover': 21000,
