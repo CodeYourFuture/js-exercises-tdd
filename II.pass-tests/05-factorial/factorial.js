@@ -9,7 +9,17 @@
 // note: factorial of 0 is 1
 
 function factorial(int) {
-
+    if (int==0 || int==1) {
+        return 1;
+    } else {
+        total = 1;
+    for (i=1; i<=int; i++) {
+        total = total * i;
+    }
+    return total;
 }
+}
+
+
 
 module.exports = factorial;
