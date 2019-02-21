@@ -1,5 +1,5 @@
 function getEven(numbers) {
-    return numbers.filter(function (number) {
+    return numbers.filter(number => {
         return number % 2 === 0;
     })
 }
