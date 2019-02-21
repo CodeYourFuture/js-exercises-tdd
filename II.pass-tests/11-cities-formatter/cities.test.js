@@ -7,7 +7,7 @@ test('Cities', function () {
         { city: 'Rome', country: 'Italy' },
     ];
 
-    function transform({ city, country }) {
+    function transform( city, country ) {
         return `${city} is the capital of ${country}`;
     }
 
