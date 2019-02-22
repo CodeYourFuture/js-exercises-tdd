@@ -1,14 +1,22 @@
 function removeVowels(word) {
-    var characters = word.split('');
+    var strInLowerCase = word.toLowerCase();
+    var characters = strInLowerCase.split("");
+    
 
     var result = [];
 
     characters.forEach(function (character) {
-        if (character === 'a' || character === 'o' || character === 'i' || character === 'e'
-            || character === 'u' || character === 'y') {
-            result.push(character)
+     
+        if (
+          character == "a" ||
+          character == "e" ||
+          character == "i" ||
+          character == "o" ||
+          character == "u"
+        ) {
+          result.push("");
         } else {
-            result.push('_')
+          result.push(character);
         }
     })
 

@@ -8,8 +8,14 @@
 // calculate and return the factorial of int
 // note: factorial of 0 is 1
 
-function factorial(int) {
-
+function factorialize(int) {
+  if (int < 0) {
+    return -1;
+  } else if (int == 0) {
+    return 1;
+  } else {
+    return int * factorialize(int - 1);
+  }
 }
 
-module.exports = factorial;
+module.exports = factorialize;
