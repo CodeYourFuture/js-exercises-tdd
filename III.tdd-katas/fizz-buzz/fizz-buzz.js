@@ -42,11 +42,11 @@ function fizzbuzz(number) {
 function fizzbuzz(number) {
     var result = [];
     for (var i = 1; i <= number; i++) {
-        if (isInculed(3, i) && isInculed(5, i) || isDividedBy(i, 3) && isDividedBy(i, 5)) {
+        if (isIncluded(i, 3, 5) || isDividedBy(i, 3 * 5)) {
             result.push("FizzBuzz");
-        } else if (isInculed(3, i) || isDividedBy(i, 3)) {
+        } else if (isIncluded(i, 3) || isDividedBy(i, 3)) {
             result.push("Fizz");
-        } else if (isInculed(3, i) || isDividedBy(i, 5)) {
+        } else if (isIncluded(i, 5) || isDividedBy(i, 5)) {
             result.push("Buzz");
         } else {
             result.push(i);
@@ -56,9 +56,10 @@ function fizzbuzz(number) {
 }
 
 
-// function to check if any number is icluded inside the number
-function isInculed(threeOrfive, number) {
-    return number.toString().includes(threeOrfive);
+// function to check if any number is included inside the number
+function isIncluded(number, first, second = "") {
+    number = number.toString();
+    return number.includes(first) && number.includes(second);
 }
 // function to check if the number is divisible by any number
 function isDividedBy(number, divisor) {
