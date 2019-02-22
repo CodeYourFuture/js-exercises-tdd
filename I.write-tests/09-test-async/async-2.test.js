@@ -14,4 +14,14 @@ test("gets a list of repositories names (with mock)", function() {
   });
 });
 
-test("a more deterministic test", function() {});
+test("a more deterministic test", function () {
+  // arrange
+  fetcher.mockResolvedValue([{ name: "js-jack" }, { name: "js-cyf" }]);
+  var url = "https://api.github.com/users/kabaros/repos";
+
+  // act
+  return getRepos(url).then(function (result) {
+    // assert
+    expect(result).toContain("js-cyf");
+  });
+});

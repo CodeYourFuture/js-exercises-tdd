@@ -1,0 +1,1 @@
+module.exports = arr => arr.sort()[arr.length-2]

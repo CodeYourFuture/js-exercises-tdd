@@ -3,5 +3,5 @@ module.exports = function (array) {
     newArray.sort(function (x, y) {
         return x > y;
     });
-    return [newArray[1], newArray[2]];
+    return [newArray[1], newArray[2], array];
 };

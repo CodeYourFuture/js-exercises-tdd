@@ -8,8 +8,9 @@
 // calculate and return the factorial of int
 // note: factorial of 0 is 1
 
-function factorial(int) {
-
+factorial = (int) => {
+    let f = [];
+  return  (int == 0 || int == 1) ? 1 : factorial(int-1) * int
 }
 
 module.exports = factorial;
