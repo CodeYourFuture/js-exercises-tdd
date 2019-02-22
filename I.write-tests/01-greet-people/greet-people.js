@@ -1,14 +1,14 @@
-function greetPeople(people) {
-    var greeting = 'Hello ';
+function greetPeople (people) {
+  var greeting = 'Hello '
+  return greeting + people.join(', ');
+  //   people.forEach(function (person) {
+  //     greeting = greeting + person + ', '
+  //   })
 
-    people.forEach(function (person) {
-        greeting = greeting + person;
-    });
-
-    return greeting;
+  //   return greeting
 }
 
-module.exports = greetPeople;
+module.exports = greetPeople
 
 /*
   Let's trace this piece of code - what is the value of result with this input
