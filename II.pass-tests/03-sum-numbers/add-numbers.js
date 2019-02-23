@@ -1,4 +1,2 @@
-function addNumbers(numbers) {
-
-}
+function addNumbers(numbers) {}
 module.exports = addNumbers;
