@@ -9,7 +9,12 @@
 // note: factorial of 0 is 1
 
 function factorial(int) {
-
+  if (int != 0) {
+    var result = int * factorial(int - 1);
+    return result;
+  } else {
+    return (result = 1);
+  }
 }
 
 module.exports = factorial;
