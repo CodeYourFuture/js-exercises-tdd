@@ -1,5 +1,3 @@
-module.exports = function (words, wordToFindIndex) {
-  return words.indexOf(wordToFindIndex);
+module.exports = function findNeedle(words) {
+  return words.indexOf("needle");
 }
-
-
