@@ -22,7 +22,7 @@ test('Paint shop', function () {
         { make: 'Honda', model: 'Civic', colour: 'Yellow' }
     ];
 
-    var output = paintShop(cars, 'Pink');
+    var output = paintShop(cars, "Ford", 'Pink');
 
     expect(output).toEqual(repaintedCars);
     expect(cars).toEqual(unpaintedCars);
