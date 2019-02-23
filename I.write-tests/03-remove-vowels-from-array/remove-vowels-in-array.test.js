@@ -6,4 +6,4 @@ test("remove vowels from all words in array", function() {
 
 // example
 // input: ["Irina", "Etza", "Daniel"]
-// expected output: ["rn", "tz", "dnl"]
+// expected output: ["rn", "tz", "Dnl"]
