@@ -8,8 +8,13 @@
 // calculate and return the factorial of int
 // note: factorial of 0 is 1
 
-function factorial(int) {
-
+function factorial (int) {
+  if (int >= 0) {
+    var fact = 1
+    for (i = 2; i <= int; i++) {
+      fact = fact * i
+    }
+  }
+  return fact
 }
-
-module.exports = factorial;
+module.exports = factorial
