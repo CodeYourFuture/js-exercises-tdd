@@ -1,5 +1,3 @@
-function findNeedle(words) {
-
-}
+function findNeedle(words) {}
 
 module.exports = findNeedle;
