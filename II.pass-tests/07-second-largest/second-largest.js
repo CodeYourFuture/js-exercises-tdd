@@ -1,6 +1,7 @@
 function secondLargest(numbers) {
-    numbers.sort();
-    return numbers[numbers.length-2];
+    numbers.sort(function(a,b){return b-a});
+    console.log(numbers);
+    return numbers[1];
 }
 
 module.exports = secondLargest;
