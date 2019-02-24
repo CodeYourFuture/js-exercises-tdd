@@ -5,7 +5,7 @@ for (i=0; i<numbers.length; i++){
 }
 return total;
 */
-total=0;
+var total=0;
 total= numbers.reduce(
      function (total, number) { 
         return total+number;   

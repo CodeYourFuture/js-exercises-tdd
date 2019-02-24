@@ -22,3 +22,4 @@ test('Cities', function () {
     expect(result).toEqual(expected);
 });
 
+module.exports = formatCities;
