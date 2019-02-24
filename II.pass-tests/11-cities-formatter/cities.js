@@ -1,0 +1,1 @@
+module.exports = (array, callback) => array.map(x => callback(x))
