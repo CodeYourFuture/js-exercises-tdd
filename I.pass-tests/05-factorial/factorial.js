@@ -8,8 +8,6 @@
 // calculate and return the factorial of int
 // note: factorial of 0 is 1
 
-function factorial(int) {
-
-}
+function factorial(int) {}
 
 module.exports = factorial;
