@@ -1,4 +1,5 @@
-module.exports = function(capitals) {
-  var formattedCities = capitals.map(a => Object.assign({}, a));
+module.exports = function(capitals, callback) {
+  var formattedCities = [];
+  capitals.forEach(capital => formattedCities.push(callback(capital)));
   return formattedCities;
 };
