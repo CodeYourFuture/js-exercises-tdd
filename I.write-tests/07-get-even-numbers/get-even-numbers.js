@@ -1,7 +1,9 @@
 function getEven(numbers) {
-    return numbers.filter(function (number) {
+    //var originalNumbers = numbers;
+    var arrNumbers = numbers.filter(function (number) {
         return number % 2 === 0;
     })
+    //if (numbers ===)
 }
 
 module.exports = getEven;

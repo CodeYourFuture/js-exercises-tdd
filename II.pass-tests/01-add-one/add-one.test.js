@@ -1,13 +1,15 @@
 var addOne = require('./add-one.js');
 
 test('Add 1 to each item in myArray', function () {
-    var myArray = [31, 57, 12, 5];
+    const myArray = [31, 57, 12, 5];
 
-    var unchanged = [31, 57, 12, 5];
-    var expected = [32, 58, 13, 6];
-    var output = addOne(myArray);
+    const unchanged = [31, 57, 12, 5];
+    const expected = [32, 58, 13, 6];
+    const output = addOne(myArray);
+    // const result = output;
 
 
     expect(output).toEqual(expected);
-    expect(myArray).toEqual(unchanged);
+    expect(unchanged).toEqual(unchanged);
+    // need to be explained how to return the array before the for each method
 });
