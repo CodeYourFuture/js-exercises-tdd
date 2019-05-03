@@ -6,6 +6,5 @@ test("remove vowels from word", function() {
   expect(removeVowels("unt")).toBe("nt");
   expect(removeVowels("uit")).toBe("t");
   expect(removeVowels("ent")).toBe("nt");
-  expect(removeVowels("CodeYourFuture")).toBe("CdYrFtr");
-  expect(removeVowels("")).toBe("");
+  expect(removeVowels("IaiAz")).toBe("z");
 });

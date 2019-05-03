@@ -1,9 +1,9 @@
 function removeVowels(word) {
-  var characters = word.split("");
+  var characters = word.toLowerCase().split("");
 
   var result = [];
 
-  characters.forEach(function(character) {
+  characters.forEach(character => {
     if (
       !(
         character === "a" ||
@@ -16,7 +16,6 @@ function removeVowels(word) {
       result.push(character);
     }
   });
-
   return result.join("");
 }
 
