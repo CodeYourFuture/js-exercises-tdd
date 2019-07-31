@@ -21,5 +21,9 @@
   },
   "dependencies": {
     "node-fetch": "^2.1.2"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
   }
 }
