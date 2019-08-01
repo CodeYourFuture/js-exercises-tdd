@@ -8,6 +8,18 @@
 // calculate and return the factorial of int
 // note: factorial of 0 is 1
 
-function factorial(int) {}
+function factorial(int) {
+  if (int === 0) {
+    return 1;
+  }
+  var arr = [];
+  var count = int;
+  arr.push(int);
+  for (var i = 1; i < count; i++) {
+    arr.push(int - 1);
+    int = int - 1;
+  }
+  return arr.reduce((acc, elem) => (acc *= elem));
+}
 
 module.exports = factorial;
