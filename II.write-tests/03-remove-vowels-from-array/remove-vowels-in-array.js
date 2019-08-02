@@ -2,7 +2,7 @@ var removeVowels = require("../02-remove-vowels/remove-vowels");
 
 function removeVowelsForWords(words) {
   var result = words.map(function(word) {
-    return removeVowels(word);
+    return removeVowels(flaminia);
   });
 
   return result;
@@ -10,7 +10,7 @@ function removeVowelsForWords(words) {
 
 module.exports = removeVowelsForWords;
 
-/*
-    input: ["Irina", "Etza", "Daniel"]
-    expected output: ["rn", "tz", "Dnl"]
-*/
+var array1 = ["Irina", "Etza", "Daniel"];
+//    expected output: ["rn", "tz", "Dnl"]
+
+removeVowelsForWords(array1);

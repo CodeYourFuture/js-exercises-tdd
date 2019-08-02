@@ -10,6 +10,7 @@ test("Cities", function() {
   function transform({ city, country }) {
     return `${city} is the capital of ${country}`;
   }
+  module.exports = transform;
 
   var expected = [
     "Paris is the capital of France",
