@@ -24,9 +24,5 @@
   },
   "jest": {
     "testURL": "http://localhost/"
-<<<<<<< HEAD
-  },
-=======
   }
->>>>>>> Fix npm test
 }
