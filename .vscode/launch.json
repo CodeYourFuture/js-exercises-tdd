@@ -13,14 +13,17 @@
             "request": "launch",
             "address": "localhost",
             // everything above here is standard node debug
-            // some people specify "port": 5858, but that didn't work; Code seems to pick the right one now
+            "port": 9229, // Without it, it was failing to attach. Previous comment
+            //some people specify "port": 5858, but that didn't work; Code seems to pick the right one now
             "sourceMaps": false, // if you are using Babel or TS, make this true
             // you can add another arg to pattern-match limit the tests, just as when normally running jest
             "runtimeArgs": [
+                "--inspect-brk", // was producing an error: Following options were not recognized
                 "${workspaceRoot}/node_modules/jest/bin/jest.js",
                 "--runInBand", // https://facebook.github.io/jest/docs/en/cli.html#runinband - don't parallelize
                 "--no-cache" // https://facebook.github.io/jest/docs/en/cli.html#cache - just avoid caching issues
             ],
+            "console": "integratedTerminal", //Move output to the terminal. It provides color coded messages
             "env": {
                 "NODE_ENV": "test" // make sure it matches your target; useful for babel config
             }
