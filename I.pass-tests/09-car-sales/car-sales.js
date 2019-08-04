@@ -1,5 +1,12 @@
 function sales(carsSold) {
-  var totall = new Object();
+   const totals = {};
+    carsSold.forEach(carSold => {
+        var total = totals.hasOwnProperty(carSold.make) ? totals[carSold.make] : 0;
+        total += carSold.price;
+        totals[carSold.make] = total;
+    });
+
+    return totals;
   var fordPrice = 0,
     hondaPrice = 0,
     toyotaPrice = 0,
