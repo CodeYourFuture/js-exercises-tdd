@@ -9,6 +9,13 @@
 // note: factorial of 0 is 1
 
 function factorial(int) {
+    var fact = 1
+    for (var i = int; i > 0; i--) {
+        fact *= i;
+    }
+
+    return fact;
+}
   var array = [];
   var i = 1;
   while (i <= int) {
