@@ -1,3 +1,6 @@
+var mentors = ["Irina", "Ashleigh", "Etza"];
+var result = greetPeople(mentors);
+
 function greetPeople(people) {
   var greeting = "Hello ";
 
