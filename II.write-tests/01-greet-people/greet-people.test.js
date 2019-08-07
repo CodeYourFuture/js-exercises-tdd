@@ -1,5 +1,8 @@
-test("print list of names prefixed with Hello", function() {
-  // Arrange
-  // Act
-  // Assert
+var greetPeople = require("./greet-people");
+
+test("print list names", function() {
+  var mentors = ["Irina", "Ashleigh", "Etza"];
+  var result = greetPeople(mentors);
+
+  expect(result).toBe("Hello IrinaAshleighEtza");
 });
