@@ -1,22 +1,21 @@
 function removeVowels(word) {
-  var characters = word.split("");
+  var characters = word.toLowerCase().split("");
 
   var result = [];
 
-  characters.forEach(function(character) {
+  characters.forEach(character => {
     if (
-      character === "a" ||
-      character === "o" ||
-      character === "i" ||
-      character === "e" ||
-      character === "u"
+      !(
+        character === "a" ||
+        character === "o" ||
+        character === "i" ||
+        character === "e" ||
+        character === "u"
+      )
     ) {
       result.push(character);
-    } else {
-      result.push("_");
     }
   });
-
   return result.join("");
 }
 
