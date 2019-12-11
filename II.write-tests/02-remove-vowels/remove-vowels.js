@@ -9,11 +9,16 @@ function removeVowels(word) {
       character === "o" ||
       character === "i" ||
       character === "e" ||
-      character === "u"
+      character === "u" ||
+      character === "A" ||
+      character === "O" ||
+      character === "I" ||
+      character === "E" ||
+      character === "U"
     ) {
-      result.push(character);
-    } else {
       result.push("_");
+    } else {
+      result.push(character);
     }
   });
 
@@ -21,6 +26,7 @@ function removeVowels(word) {
 }
 
 module.exports = removeVowels;
+// var result = removeVowels("samuel");
 
 /*
   Let's trace this piece of code - what is the value of result with this input
