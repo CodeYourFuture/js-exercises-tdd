@@ -1,5 +1,7 @@
+var removeVowels = require("./remove-vowels");
+
 test("remove vowels from word", function() {
-  // Arrange
-  // Act
-  // Assert
+  var name = "samuel";
+  var result = removeVowels(name);
+  expect(result).toEqual("sml");
 });
