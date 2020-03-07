@@ -1,11 +1,12 @@
 
 function paintShop(cars, newColor) {
-    for (let obj of cars) {
+    let copyOfCars = JSON.parse(JSON.stringify(cars));
+    for (let obj of copyOfCars) {
         if (obj.colour == 'Red') {
             obj.colour = newColor;
         }
     }
-    return cars.splice(0);
+    return copyOfCars;
 }
 
 module.exports = paintShop;
