@@ -1,12 +1,11 @@
+
 function paintShop(cars, newColor) {
-    cars.map(x => {
-        x.colour == newColor ? x.colour = 'pink' : x.colour = x.colour;
-    });
-    for (let obj in cars){
-        if (obj.colour == 'red'){
+    for (let obj of cars) {
+        if (obj.colour == 'Red') {
             obj.colour = newColor;
         }
     }
+    return cars.splice(0);
 }
 
 module.exports = paintShop;
