@@ -4,7 +4,7 @@ test("remove vowels from word", function() {
   
   var result = removeVowels('samuel');
 
-  var expected = "_a_ue_";
+  var expected = "sml";
 
   expect(result).toEqual(expected);
 });

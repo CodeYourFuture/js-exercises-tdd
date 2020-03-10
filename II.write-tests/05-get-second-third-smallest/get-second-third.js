@@ -1,4 +1,4 @@
-module.exports = function(array) {
+module.exports = function sortArray(array) {
   const newArray = array.slice();
   newArray.sort(function(x, y) {
     return x - y;
