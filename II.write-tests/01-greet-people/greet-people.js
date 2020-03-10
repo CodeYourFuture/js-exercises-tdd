@@ -1,11 +1,11 @@
 function greetPeople(people) {
-  var greeting = "Hello ";
+    var greeting = "Hello ";
 
-  people.forEach(function(person) {
-    greeting = greeting + person;
-  });
+    people.forEach(function(person) {
+        greeting = greeting + person;
+    });
 
-  return greeting;
+    return greeting;
 }
 
 module.exports = greetPeople;
@@ -15,4 +15,13 @@ module.exports = greetPeople;
 
   var mentors = ['Irina', 'Ashleigh', 'Etza'];
   var result = greetPeople(mentors)
+*/
+
+//test failed 
+/*
+Expected value to equal:
+"Hello Irina", "Hello Ashleigh", "Hello Etza"
+
+Received:
+result = "Hello IrinaAshleighEtza"
 */
