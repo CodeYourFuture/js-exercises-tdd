@@ -1,23 +1,23 @@
 function removeVowels(word) {
-  var characters = word.split("");
+    var characters = word.split("");
 
-  var result = [];
+    var result = [];
 
-  characters.forEach(function(character) {
-    if (
-      character === "a" ||
-      character === "o" ||
-      character === "i" ||
-      character === "e" ||
-      character === "u"
-    ) {
-      result.push(character);
-    } else {
-      result.push("_");
-    }
-  });
+    characters.forEach(function(character) {
+        if (
+            character === "a" ||
+            character === "o" ||
+            character === "i" ||
+            character === "e" ||
+            character === "u"
+        ) {
+            result.push(character);
+        } else {
+            result.push("_");
+        }
+    });
 
-  return result.join("");
+    return result.join("");
 }
 
 module.exports = removeVowels;
@@ -28,4 +28,12 @@ module.exports = removeVowels;
   var result = removeVowels('samuel');
 
   what is the value of result?
+*/
+//test failed
+/*
+Expected value to equal:
+"sml"
+
+Received:
+value of the result = "_a_ue_"
 */
