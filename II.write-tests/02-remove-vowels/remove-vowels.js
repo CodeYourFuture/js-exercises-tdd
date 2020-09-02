@@ -3,7 +3,7 @@ function removeVowels(word) {
 
   var result = [];
 
-  characters.forEach(function(character) {
+  characters.forEach(function (character) {
     if (
       character === "a" ||
       character === "o" ||
@@ -11,9 +11,9 @@ function removeVowels(word) {
       character === "e" ||
       character === "u"
     ) {
-      result.push(character);
-    } else {
       result.push("_");
+    } else {
+      result.push(character);
     }
   });
 
