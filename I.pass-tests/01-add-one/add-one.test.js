@@ -1,12 +1,22 @@
-var addOne = require("./add-one.js");
+const addOne = require("./add-one.js");
 
-test("Add 1 to each item in myArray", function() {
-  var myArray = [31, 57, 12, 5];
+describe("numbers function", function() {
+  const myArray = [31, 57, 12, 5];
+  const jumbledArray = ['a', 3, 99, {}]
 
-  var unchanged = [31, 57, 12, 5];
-  var expected = [32, 58, 13, 6];
-  var output = addOne(myArray);
+  test("Adds 1 to each number in an array", function() {
+    const expected = [32, 58, 13, 6];
+    const output = addOne(myArray);
 
-  expect(output).toEqual(expected);
-  expect(myArray).toEqual(unchanged);
+    expect(output).toEqual(expected);
+  });
+
+  test("It does not mutate the original array", function() {
+    const unchanged = [31, 57, 12, 5];
+    expect(myArray).toEqual(unchanged);
+  });
+
+  test('It returns null when an element is not a number', function() {
+    expect(addOne(jumbledArray)).toContain(null);
+  });
 });
