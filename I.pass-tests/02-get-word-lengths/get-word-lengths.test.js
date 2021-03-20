@@ -1,9 +1,17 @@
-var wordLengths = require("./get-word-lengths");
+const wordLengths = require("./get-word-lengths");
 
-test("Get word lengths", function() {
-  var words = ["sun", "potato", "roundabout", "pizza"];
-  var expected = [3, 6, 10, 5];
+describe("wordLengths function", function() {
+  const words = ["sun", "potato", "roundabout", "pizza"];
+  const jumbledArray = ["hammer", [0], 12, "donkey"];
 
-  var output = wordLengths(words);
-  expect(output).toEqual(expected);
+  test("Returns word lengths", function() {
+    const expected = [3, 6, 10, 5];
+
+    const output = wordLengths(words);
+    expect(output).toEqual(expected);
+  });
+
+  test("Returns null for elements that are not strings", function() {
+    expect(wordLengths(jumbledArray)).toContain(null);
+  });
 });
