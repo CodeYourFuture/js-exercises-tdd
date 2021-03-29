@@ -27,7 +27,7 @@ describe("Second largest function", function() {
     expect(secondLargest(arr)).toEqual(null);
   });
 
-  test("It returns null if the array contains a non-integer", function() {
+  test("It returns null if array contains a non-integer", function() {
     const arr = [true];
 
     expect(secondLargest(arr)).toEqual(null);
