@@ -3,7 +3,7 @@
 // be sure to exclude the strings
 
 function getAverage(arr) {
-  if (Array.isArray(arr) === false) return
+  if (!Array.isArray(arr)) return
 
   const numArr = arr.filter(element => typeof element === 'number')
 
