@@ -1,31 +1,27 @@
 function removeVowels(word) {
-  var characters = word.split("");
+  const characters = word.split("")
 
-  var result = [];
+  let result = []
 
   characters.forEach(function(character) {
-    if (
-      character === "a" ||
-      character === "o" ||
-      character === "i" ||
-      character === "e" ||
-      character === "u"
-    ) {
-      result.push(character);
+    if (character.match(/[aeiou]/i)) {
+      result.push(character.toLowerCase())
     } else {
-      result.push("_");
+      result.push("_")
     }
-  });
+  })
 
-  return result.join("");
+  return result.join("")
 }
 
-module.exports = removeVowels;
+console.log(removeVowels('Sherlock Holmes'))
+
+module.exports = removeVowels
 
 /*
   Let's trace this piece of code - what is the value of result with this input
 
-  var result = removeVowels('samuel');
+  const result = removeVowels('samuel')
 
   what is the value of result?
 */
