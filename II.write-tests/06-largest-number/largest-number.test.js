@@ -18,6 +18,12 @@ describe('Largest number function', function() {
 
     expect(largestNumber(arr)).toEqual(7)
   })
+
+  test('It returns null if argument passed is not an array', function() {
+    const arg = true
+
+    expect(largestNumber(arg)).toBe(null)
+  })
 })
 
 // example
