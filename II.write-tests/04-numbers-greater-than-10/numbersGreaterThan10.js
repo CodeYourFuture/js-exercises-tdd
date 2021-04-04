@@ -1,5 +1,8 @@
-module.exports = function(array) {
+function numbersGreaterThan10(array) {
   return array.filter(number => {
-    return number > 10;
-  });
-};
+    if (typeof number !== 'number') return
+    return number > 10
+  })
+}
+
+module.exports = numbersGreaterThan10
