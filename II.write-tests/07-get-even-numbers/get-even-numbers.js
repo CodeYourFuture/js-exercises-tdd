@@ -1,7 +1,10 @@
 function getEven(numbers) {
+  if (!Array.isArray(numbers)) return null
+
   return numbers.filter(function(number) {
-    return number % 2 === 0;
-  });
+    if (typeof number !== 'number') return
+    return number % 2 === 0
+  })
 }
 
 module.exports = getEven;
