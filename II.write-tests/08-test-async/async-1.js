@@ -1,13 +1,16 @@
-const fetch = require("node-fetch");
+const fetch = require('node-fetch')
 
-const getRepos = function(repoName) {
-  return fetch(repoName)
-    .then(data => data.json())
-    .then(function(response) {
-      return response.map(function(rep) {
-        return rep.name;
-      });
-    });
-};
+const getRepos = async function (repoName) {
+  const response = await fetch(repoName)
 
-module.exports = getRepos;
+  if (!response.ok) {
+    const message = `HTTP error! Status: ${response.status}`
+    throw new Error(message)
+  }
+
+  const data = await response.json()
+
+  return data.map(rep => rep.name)
+}
+
+module.exports = getRepos

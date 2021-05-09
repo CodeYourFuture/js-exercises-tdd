@@ -1,12 +1,24 @@
-const getRepos = require("./async-1");
+const getRepos = require("./async-1")
 
-test("gets a list of repositories names", function() {
-  // arrange
-  var url = "https://api.github.com/users/kabaros/repos";
-  // act
-  return getRepos(url).then(function(result) {
-    // assert
-    expect(result).toContain("js-exercises");
-    expect(result).toContain("dom-ajax-repo");
-  });
-});
+describe('Get repos function', function() {
+  test('gets a list of repositories names', function() {
+    // arrange
+    const url = 'https://api.github.com/users/kabaros/repos'
+    // act
+    return getRepos(url).then(function(result) {
+      // assert
+      expect(result).toContain('dom-ajax-repo')
+    })
+  })
+
+  test('it returns an error if url cannot be found', function() {
+    const url = 'https://api.github.com/users/count-bin-face'
+
+    try {
+      getRepos(url).then(result => result)
+    }
+    catch(err) {
+      expect(err).toEqual('HTTP error! Status: 404')
+    }
+  })
+})
