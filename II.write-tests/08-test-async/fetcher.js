@@ -1,7 +1,8 @@
-const fetch = require("node-fetch");
+const fetch = require('node-fetch')
 
-const fetcher = function(repoName) {
-  return fetch(repoName).then(data => data.json());
-};
+const fetcher = async function(repoName) {
+  const data = await fetch(repoName)
+  return data.json()
+}
 
-module.exports = fetcher;
+module.exports = fetcher
