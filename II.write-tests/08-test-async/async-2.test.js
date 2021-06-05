@@ -1,17 +1,18 @@
-const getRepos = require("./async-2");
-const fetcher = require("./fetcher");
-jest.mock("./fetcher");
+const getRepos = require('./async-2')
+const fetcher = require('./fetcher')
+jest.mock('./fetcher')
 
-test("gets a list of repositories names (with mock)", function() {
+test('gets a list of repositories names (with mock)', function () {
   // arrange
-  fetcher.mockResolvedValue([{ name: "js-exercises" }]);
-  var url = "https://api.github.com/users/kabaros/repos";
+  fetcher.mockResolvedValue([{ name: 'js-exercises' }])
+  const users = ['kabaros', 'codeyourfuture']
 
   // act
-  return getRepos(url).then(function(result) {
-    // assert
-    expect(result).toContain("js-exercises");
-  });
-});
-
-test("a more deterministic test", function() {});
+  return users.forEach((user) => {
+    return getRepos(`https://api.github.com/users${user}/repos`).then(function (
+      result
+    ) {
+      expect(result).toContain('js-exercises')
+    })
+  })
+})
