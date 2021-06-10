@@ -11,12 +11,15 @@ function convertToOldRoman(number) {
     I: 1
   }
 
+  if (typeof number !== 'number') throw Error('Please enter an Arabic number')
+
   for (prop in arabicToOldRomanMapper) {
     while (number >= arabicToOldRomanMapper[prop]) {
       str += prop
       number -= arabicToOldRomanMapper[prop]
     }
   }
+
   return str
 }
 
@@ -39,12 +42,15 @@ function convertToNewRoman(number) {
     I: 1
   }
 
+  if (typeof number !== 'number') throw Error('Please enter an Arabic number')
+
   for (prop in arabicToNewRomanMapper) {
     while (number >= arabicToNewRomanMapper[prop]) {
       str += prop
       number -= arabicToNewRomanMapper[prop]
     }
   }
+
   return str
 }
 

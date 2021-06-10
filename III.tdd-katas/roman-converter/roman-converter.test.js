@@ -24,6 +24,10 @@ describe('The `convertToOldRoman` function', function () {
   test("it converts the number 22 into it's correct Roman numeral equivalent", function () {
     expect(convertToOldRoman(22)).toEqual('XXII')
   })
+
+  test('it returns an empty string if 0 is passed in as an argument', function () {
+    expect(convertToOldRoman(0)).toBe('')
+  })
 })
 
 describe('The `convertToNewRoman` function', function () {
@@ -53,5 +57,11 @@ describe('The `convertToNewRoman` function', function () {
 
   test("it converts the number 944 into it's correct Roman numeral equivalent", function () {
     expect(convertToNewRoman(944)).toEqual('CMXLIV')
+  })
+
+  test('it throws an error if argument passed is not a number', function () {
+    expect(() => convertToNewRoman('String')).toThrow(
+      Error('Please enter an Arabic number')
+    )
   })
 })
