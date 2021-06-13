@@ -1,6 +1,6 @@
-function convertToOldRoman(number) {
-  let str = ''
+const helper = require('./roman-converter-helper')
 
+function convertToOldRoman(number) {
   const arabicToOldRomanMapper = {
     M: 1000,
     D: 500,
@@ -8,24 +8,13 @@ function convertToOldRoman(number) {
     L: 50,
     X: 10,
     V: 5,
-    I: 1
+    I: 1,
   }
 
-  if (typeof number !== 'number') throw Error('Please enter an Arabic number')
-
-  for (prop in arabicToOldRomanMapper) {
-    while (number >= arabicToOldRomanMapper[prop]) {
-      str += prop
-      number -= arabicToOldRomanMapper[prop]
-    }
-  }
-
-  return str
+  return helper(number, arabicToOldRomanMapper)
 }
 
 function convertToNewRoman(number) {
-  let str = ''
-
   const arabicToNewRomanMapper = {
     M: 1000,
     CM: 900,
@@ -39,22 +28,13 @@ function convertToNewRoman(number) {
     IX: 9,
     V: 5,
     IV: 4,
-    I: 1
+    I: 1,
   }
 
-  if (typeof number !== 'number') throw Error('Please enter an Arabic number')
-
-  for (prop in arabicToNewRomanMapper) {
-    while (number >= arabicToNewRomanMapper[prop]) {
-      str += prop
-      number -= arabicToNewRomanMapper[prop]
-    }
-  }
-
-  return str
+  return helper(number, arabicToNewRomanMapper)
 }
 
 module.exports = {
   convertToOldRoman,
-  convertToNewRoman
+  convertToNewRoman,
 }
