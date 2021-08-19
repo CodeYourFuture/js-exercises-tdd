@@ -11,3 +11,5 @@ const getRepos = function(repoName) {
 };
 
 module.exports = getRepos;
+
+console.log(getRepos("https://api.github.com/users/kabaros/repos"))
