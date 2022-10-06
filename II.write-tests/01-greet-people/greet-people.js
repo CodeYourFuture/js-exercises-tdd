@@ -8,7 +8,7 @@ function greetPeople(people) {
   return greeting;
 }
 
-module.exports = greetPeople;
+modules.exports = greetPeople;
 
 /*
   Let's trace this piece of code - what is the value of result with this input
